@@ -13,6 +13,6 @@ class Command:
         self.roll = 0.0
         self.activation = 0
         
-        self.hop_event = False
-        self.trot_event = False
-        self.activate_event = False
+        self.hop_event = False # # becomes true when hop button is pressed, false immediately after
+        self.trot_event = False # becomes true when trot button is pressed, false immediately after
+        self.activate_event = False # becomes true when activate button is pressed, false immediately after

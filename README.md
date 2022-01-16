@@ -39,3 +39,19 @@ You can find the bill of materials, pre-made kit purchasing options, assembly in
 - We also have a Google group set up here: https://groups.google.com/forum/#!forum/stanford-quadrupeds
 
 
+## Developer notes
+
+### To be able to apt update
+
+    rw #to enter the read-write mode
+    chmod 1777 /tmp #to have premissions to write to tmp https://superuser.com/questions/1496529/sudo-apt-get-update-couldnt-create-temporary-file
+    cd ~/; ./time_sync.sh #to sync time
+    sudo apt update
+
+
+### To be able to develop with ROS
+    rw #to enter the read-write mode
+    chmod 1777 /tmp #to have premissions to write to tmp https://superuser.com/questions/1496529/sudo-apt-get-update-couldnt-create-temporary-file
+    sudo pigpiod
+    cd ~/StanfordQuadruped
+    python3 run_robot.py

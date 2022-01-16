@@ -33,6 +33,7 @@ class Configuration:
         ################# CONTROLLER BASE COLOR ##############
         self.ps4_color = PS4_COLOR    
         self.ps4_deactivated_color = PS4_DEACTIVATED_COLOR    
+        self.read_joystick = False # if True joystick commands will be read, if False ROS commands will apply
 
         #################### COMMANDS ####################
         self.max_x_velocity = 0.4
